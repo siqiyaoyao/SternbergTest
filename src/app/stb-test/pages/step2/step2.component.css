@@ -1,0 +1,9 @@
+.testback
+{ 
+/* background: rgba(0, 0, 0, 1); */
+}
+
+[nz-button] {
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
