@@ -22,7 +22,7 @@
   </nz-content>
   
   <nz-footer>
-    <nz-input-group nzSearch nzSize="large" [nzSuffix]="suffixButton" nzPrefixIcon="anticon anticon-user">
+    <nz-input-group nzSearch nzSize="large" [nzAddOnAfter]="suffixButton" nzPrefixIcon="anticon anticon-user">
       <input type="text" nz-input placeholder="Please enter your ID" [(ngModel)]="userId">
     </nz-input-group>
     <ng-template #suffixButton>

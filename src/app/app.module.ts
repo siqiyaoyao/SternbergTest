@@ -19,7 +19,7 @@ import { TestComponent } from './test/test.component';
 registerLocaleData(zh);
 export const appRoutes:Routes =[
 
-  {path:'stb',loadChildren:'./stb-test/stb-test.module#StbTestModule'},
+  {path:'stb',loadChildren:() => import('./stb-test/stb-test.module').then(m => m.StbTestModule)},
   { path: '' ,redirectTo:'/stb/step1', pathMatch:'full'},//normal
   {path:'test',component:TestComponent}
 ]
